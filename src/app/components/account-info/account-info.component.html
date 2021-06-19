@@ -1,0 +1,18 @@
+<mat-card class="menucard">
+  <mat-card-content>
+    <h2 class="title">Account info</h2>
+    <button mat-raised-button routerLinkActive="active" routerLink="/card-list" class="menubtn">Card list</button>
+    <button mat-raised-button routerLinkActive="active" routerLink="/card-create" class="menubtn">Add card</button>
+    <button mat-raised-button  routerLinkActive="active" (click)=logout() class="logout">Log out</button>
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="card">
+  <h2 class="title">Account info</h2>
+  <mat-card-content>
+    <div>Name: {{this.name}}</div>
+    <div>Username: {{this.username}}</div>
+    <div>E-mail: {{this.email}}</div>
+  </mat-card-content>
+</mat-card>
+   
